@@ -1,0 +1,162 @@
+@font-face{
+  font-family: Roboto;  
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  background-color: #1F1E24;  
+}
+section{
+  float: left;
+}
+.coluna{
+  float: left;
+  padding: 0 5%;
+  position: relative;
+  width: 40%;
+}
+.tres{
+  width: 26%;
+  padding: 0 2%;
+  margin-left: 2%;
+  
+}
+h1,h2,h3,h4,p{
+  font-family: Roboto;
+  z-index: 10;
+}
+.titulo-card{
+  color: #ED7327;
+}
+
+#box-itens{
+  width: 100%;
+}
+.subtitulo{
+  padding-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.box-layout{
+  border-radius: 12px;
+  background-color: #23232D;
+  color: white;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 8px #121218;
+}
+.badge{
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  z-index: 10;
+}
+.badge, p{
+  font-size: 16px;
+  
+}
+#txt-designado{
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#txt-aberto-por{
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+.alert{
+  position: absolute;
+  width: 100%;  
+  height: 100%;
+  margin-top: 2px;
+  text-align: center; 
+  font-size: 30px; 
+}
+
+.imgback{
+  right: -1px;
+  bottom: -1px;
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  float: right;
+}
+.box-txt{
+  position: relative;
+  z-index: 10;
+}
+.textleft{
+  float: left;
+  width: 70%;
+}
+.txt-hora{
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+.txt-hora p{
+  font-size: 10px;
+  margin: 0px;
+}
+.txt-hora h4{
+  font-size: 18px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 900px) {
+
+  section{
+    float: none;
+  }
+
+  .tres{
+    padding: 0 2%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    
+  }
+  .coluna{
+    position: relative;
+    
+    margin-left: 20px;    
+    width: 90%;
+    margin-right: 20px;
+    
+  }
+  .box-layout{
+    border-radius: 12px;
+    color: white;
+    word-wrap: break-word;
+  }
+
+  
+@media screen and (max-width: 600px) {
+
+  section{
+    float: none;
+  }
+
+  .tres{
+    padding: 0 2%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    
+  }
+  .coluna{
+    position: relative;    
+    margin-left: 20px;    
+    width: 88%;
+    margin-right: 20px;
+    
+  }
+  .box-layout{
+    border-radius: 12px;    
+    color: white;
+    word-wrap: break-word;
+  }
+
+  }
+}

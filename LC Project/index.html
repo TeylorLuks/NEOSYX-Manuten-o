@@ -1,0 +1,75 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="box-itens" class="destaque">
+      <h3 class="centralizado subtitulo">Novos Chamados</h3>      
+      <div class="coluna tres box-layout">        
+        <div class="badge">
+          <h2 class="alert">!</h2>
+          <svg height="40" width="40">
+            <circle cx="20" cy="20" r="20" fill="#ED7327" />
+          </svg>          
+        </div>
+        <div class="box-txt">
+          <h3 class="titulo-card">ATUALIZAÇÃO TRAVADA</h3>
+          <p id="mensagem">Caros, estamos testando esse novo layout, então paciência se encontrarem algum erro, anamastê</p>
+          <div class="textleft">
+            <p id="txt-aberto-por">Aberto por: Teylor Alencar</p>        
+            <p id="txt-designado">Designado por: Teylor Alencar</p>            
+          </div>          
+          <div class="txt-hora">
+            <p>Aberto ás:</p>
+            <h4>16:30</h4>          
+          </div>
+        </div>        
+        <img src="imgs/Caminho 2.png" alt="back" class="imgback">         
+      </div>
+      <div class="coluna tres box-layout">
+        <div class="badge">
+          <h2 class="alert">!</h2>
+          <svg height="40" width="40">
+            <circle cx="20" cy="20" r="20" fill="#ED7327" />
+          </svg>          
+        </div>
+        <h4>Itacorubi</h4>
+        <p>Rodovia Admar Gonzaga</p>
+      </div>
+      <div class="coluna tres box-layout">
+        <div class="badge">
+          <h2 class="alert">!</h2>
+          <svg height="40" width="40">
+            <circle cx="20" cy="20" r="20" fill="#ED7327" />
+          </svg>          
+        </div>
+        <h4>Itacorubi</h4>
+        <p>Rodovia Admar Gonzaga</p>
+      </div>      
+    </section>    
+  </body>
+  <script>
+    var c = document.getElementById("myCanvas");
+    c.style.zIndex = 1;
+    var positionInfo = c.getBoundingClientRect();
+    var height = positionInfo.height;
+    var width = positionInfo.width;
+    var ctx = c.getContext("2d");
+        
+    ctx.beginPath();
+    ctx.moveTo(100, 150);
+    ctx.bezierCurveTo(120, 80, 200, 140, 300, 30);
+    ctx.lineTo(300,150)
+    ctx.lineTo(100,150)
+    ctx.fillStyle = randomColor();
+    ctx.fill();
+
+    function randomColor(){ 
+     return('#'+Math.floor(Math.random()*16777215).toString(16));
+    }
+    
+  </script>
+</html>
